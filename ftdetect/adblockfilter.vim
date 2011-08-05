@@ -3,12 +3,12 @@
 " File:         ftdetect/adblockfilter.vim
 " Author:       mojako <moja.ojj@gmail.com>
 " URL:          https://github.com/mojako/adblock-filter.vim
-" Last Change:  2011-07-24
+" Last Change:  2011-08-05
 " ============================================================================
 
-au! BufNewFile,BufRead *.txt call s:detect_adblock_filter()
+au BufNewFile,BufRead *.txt call s:detect_adblock_filter()
 function! s:detect_adblock_filter()
-    if getline(1) =~ '\[Adblock.*\]'
+    if getline(1) =~? '\[Adblock.*\]'
         setfiletype adblockfilter
     endif
 endfunction
