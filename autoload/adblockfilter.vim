@@ -2,7 +2,7 @@
 " File:         autoload/adblockfilter.vim
 " Author:       mojako <moja.ojj@gmail.com>
 " URL:          https://github.com/mojako/adblock-filter.vim
-" Last Change:  2011-08-06
+" Last Change:  2011-08-17
 " ============================================================================
 
 " s:cpo_save {{{1
@@ -65,5 +65,5 @@ endfunction
 let &cpo = s:cpo_save
 unlet s:cpo_save
 "}}}
-"
+
 " vim: set et sts=4 sw=4 wrap:
